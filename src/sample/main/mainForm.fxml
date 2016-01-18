@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0"
+            prefWidth="815.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.main.MainFormController">
+    <children>
+        <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="132.0"
+                text="Поселение"/>
+        <Button layoutX="156.0" layoutY="14.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="142.0"
+                text="Выезд"/>
+        <Button layoutX="300.0" layoutY="14.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="154.0"
+                text="Файл отчёта"/>
+        <Button layoutX="455.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeUser" prefHeight="88.0"
+                prefWidth="171.0" text="Смена пользователя"/>
+        <Button layoutX="627.0" layoutY="14.0" mnemonicParsing="false" onAction="#adminClick" prefHeight="88.0"
+                prefWidth="180.0" text="Администрирование"/>
+        <Label fx:id="login" layoutX="24.0" layoutY="576.0" text="Вход выполнен"/>
+        <Label layoutX="24.0" layoutY="121.0" text="Свободные номера"/>
+        <TreeTableView layoutX="305.0" layoutY="149.0" prefHeight="200.0" prefWidth="500.0">
+            <columns>
+                <TreeTableColumn prefWidth="131.0" text="Гость"/>
+                <TreeTableColumn prefWidth="57.0" text="Номер"/>
+                <TreeTableColumn prefWidth="101.0" text="Тип номера"/>
+                <TreeTableColumn prefWidth="108.0" text="Дата заезда"/>
+                <TreeTableColumn prefWidth="101.0" text="Дата выезда"/>
+            </columns>
+        </TreeTableView>
+        <Label layoutX="306.0" layoutY="121.0" prefHeight="17.0" prefWidth="108.0" text="Занятые номера"/>
+        <TableView fx:id="FreeRooms" layoutX="24.0" layoutY="149.0" prefHeight="425.0" prefWidth="256.0">
+            <columns>
+                <TableColumn fx:id="numColumn" prefWidth="59.0" text="Номер"/>
+                <TableColumn fx:id="typeColumn" prefWidth="112.0" text="Тип номера"/>
+                <TableColumn fx:id="priceColumn" prefWidth="83.0" text="Стоимость, р"/>
+            </columns>
+        </TableView>
+        <TableView layoutX="305.0" layoutY="383.0" prefHeight="191.0" prefWidth="500.0">
+            <columns>
+                <TableColumn prefWidth="134.0" text="Гость"/>
+                <TableColumn prefWidth="57.0" text="Номер"/>
+                <TableColumn prefWidth="103.0" text="Тип номера"/>
+                <TableColumn prefWidth="103.0" text="Дата заезда"/>
+                <TableColumn prefWidth="102.0" text="Дата выезда"/>
+            </columns>
+        </TableView>
+        <Label layoutX="305.0" layoutY="368.0"/>
+        <Label layoutX="306.0" layoutY="360.0" text="Выезд сегодня"/>
+    </children>
+    <stylesheets>
+        <URL value="@StyleMainForm.css"/>
+    </stylesheets>
+</AnchorPane>

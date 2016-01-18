@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0"
+            prefWidth="282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.newUser.NewUserController">
+    <children>
+        <Button layoutX="204.0" layoutY="173.0" mnemonicParsing="false" text="Добавить" onAction="#addClick"/>
+        <Label layoutX="40.0" layoutY="27.0" text="Добавление нового пользователя"/>
+        <Label layoutX="22.0" layoutY="73.0" text="Логин"/>
+        <TextField fx:id="edit1" layoutX="88.0" layoutY="69.0" prefHeight="25.0" prefWidth="180.0"/>
+        <TextField fx:id="edit2" layoutX="88.0" layoutY="121.0" prefHeight="25.0" prefWidth="180.0"/>
+        <Label layoutX="22.0" layoutY="125.0" text="Пароль"/>
+    </children>
+    <stylesheets>
+        <URL value="@../Style.css"/>
+    </stylesheets>
+</AnchorPane>

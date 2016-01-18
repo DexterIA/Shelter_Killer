@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0"
+            prefWidth="764.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.admin.AdminController">
+    <children>
+        <TableView fx:id="Rooms" layoutX="17.0" layoutY="118.0" prefHeight="400.0" prefWidth="365.0">
+            <columns>
+                <TableColumn fx:id="numColumn" prefWidth="93.0" text="Номер"/>
+                <TableColumn fx:id="typeColumn" prefWidth="168.0" text="Тип номера"/>
+                <TableColumn fx:id="priceColumn" prefWidth="103.0" text="Стоимость, р"/>
+            </columns>
+        </TableView>
+        <TableView fx:id="employers" layoutX="407.0" layoutY="118.0" prefHeight="400.0" prefWidth="343.0">
+            <columns>
+                <TableColumn fx:id="tabNoColumn" prefWidth="117.0" text="Табельный номер"/>
+                <TableColumn fx:id="loginColumn" prefWidth="126.0" text="Логин"/>
+                <TableColumn fx:id="passColumn" prefWidth="99.0" text="Пароль"/>
+            </columns>
+        </TableView>
+        <Label id="label" layoutX="17.0" layoutY="14.0" text="Изменение номерного фонда"/>
+        <Label id="label" layoutX="407.0" layoutY="14.0" text="Изменение персонала"/>
+        <Button layoutX="17.0" layoutY="61.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0"
+                text="Добавить"/>
+        <Button layoutX="213.0" layoutY="61.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0"
+                text="Удалить"/>
+        <Button layoutX="407.0" layoutY="61.0" mnemonicParsing="false" onAction="#newUser" prefHeight="40.0"
+                prefWidth="87.0" text="Добавить"/>
+        <Button layoutX="601.0" layoutY="61.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="40.0"
+                prefWidth="87.0" text="Удалить"/>
+        <Button layoutX="115.0" layoutY="61.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0"
+                text="Изменить"/>
+        <Button layoutX="504.0" layoutY="61.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0"
+                text="Изменить"/>
+    </children>
+    <stylesheets>
+        <URL value="@StyleAdmin.css"/>
+    </stylesheets>
+</AnchorPane>
