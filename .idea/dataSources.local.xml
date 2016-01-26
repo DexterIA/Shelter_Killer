@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="emp" uuid="5ea3f3ef-c70e-4489-ba6f-dc04aaf42b99">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+  </component>
+</project>
