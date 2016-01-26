@@ -7,8 +7,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import java.net.URL?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0"
-            prefWidth="815.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+<AnchorPane maxHeight="1080" maxWidth="1920" minHeight="600" minWidth="900" prefHeight="694.0"
+            prefWidth="1343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="sample.main.MainFormController">
     <children>
         <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="132.0"
